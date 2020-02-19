@@ -128,7 +128,7 @@ fi
 
 
 
-source /home/stijn/.zshrc/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /home/stijn/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export GPULAB_CERT='/home/stijn/Documents/thesis/gpulab-cli/certificate.pem'
 export GPULAB_DEV='False'

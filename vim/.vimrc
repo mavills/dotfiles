@@ -50,5 +50,9 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extr
 " Don't ask for confirmation for running ycm configs
 let g:ycm_confirm_extra_conf = 0
 
+highlight YcmErrorSign guibg=#500000
+highlight YcmErrorSection guibg=#A0A000
+
 " Mappings:
 map <C-n> :NERDTreeToggle<CR>
+map <F>:YcmCompleter Format<CR>
