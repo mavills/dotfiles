@@ -1,0 +1,4 @@
+*.swp
+vim/.vim/bundle/*
+vim/.vim_runtime/*
+vim/.vim/*
