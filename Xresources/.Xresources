@@ -1,0 +1,102 @@
+!! Colorscheme
+
+! special
+*.foreground: #93a1a1
+*.background: #141c21
+*.cursorColor: #afbfbf
+
+! black
+*.color0: #263640
+*.color8: #4a697d
+
+! red
+*.color1: #d12f2c
+*.color9: #fa3935
+
+! green
+*.color2: #819400
+*.color10: #a4bd00
+
+! yellow
+*.color3: #b08500
+*.color11: #d9a400
+
+! blue
+*.color4: #2587cc
+*.color12: #2ca2f5
+
+! magenta
+*.color5: #696ebf
+*.color13: #8086e8
+
+! cyan
+*.color6: #289c93
+*.color14: #33c5ba
+
+! white
+*.color7: #bfbaac
+*.color15: #fdf6e3
+! === URxvt ===
+
+! Extensions
+URxvt*perl-ext-common:          default,matcher,vtwheel,clipboard
+! Looks
+URxvt*font:                     xft:Hack Nerd Font:size=12 
+URxvt*scrollBar:                false
+URxvt.internalBorder:           0
+! Clickable urls
+URxvt.url-select.underline:     true
+URxvt.url-launcher:             /usr/bin/firefox
+URxvt.matcher.button:           1
+! Change keybinding for copy/paste
+URxvt*iso14755:                 false
+URxvt.keysym.Shift-Control-C:   perl:clipboard:copy
+URxvt.keysym.Shift-Control-V:   perl:clipboard:paste
+URxvt.letterSpace:              -1
+URxvt.lineSpace:                2
+
+! === rofi ===
+
+rofi.modi:                           ssh,window,drun,run
+!rofi.sidebar-mode:                   true
+!rofi.terminal:                       termite
+rofi.ssh-client:                     ssh
+!rofi.ssh-command:                    {terminal} -e "{ssh-client} {host}"
+rofi.opacity:                        85
+rofi.width:                          600
+rofi.lines:                          8
+rofi.columns:                        1
+rofi.font:                           Hack Nerd Font 16
+rofi.fg:                             #5294E2
+rofi.bg:                             #5d729f
+rofi.fg-active:                      #34405a
+rofi.fg-urgent:                      #34405a
+rofi.hlfg-active:                    #5e73a0
+rofi.hlfg-urgent:                    #5e73a0
+rofi.bg-active:                      #34405a
+rofi.bg-urgent:                      #34405a
+rofi.hlbg-active:                    #5d729f
+rofi.hlbg-urgent:                    #5d729f
+rofi.bgalt:                          #5671a0
+rofi.hlfg:                           #34405a
+rofi.hlbg:                           #34405a
+rofi.bc:                             #789ee1
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+!rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+!rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+rofi.color-normal: #353944,  #FFFFFF,  #353944,  #5294E2,  #FFFFFF
+
+!                  'background', 'border'
+rofi.color-window: #353944,      #404552
+rofi.bw:                             0
+rofi.location:                       0
+rofi.padding:                        20
+rofi.levenshtein-sort:               true
+rofi.case-sensitive:                 false
+rofi.fuzzy:                          false
+rofi.line-margin:                    2
+rofi.separator-style:                solid
+rofi.hide-scrollbar:                 true
+rofi.markup-rows:                    false
+rofi.scrollbar-width:                8
+rofi.show-icons:                     true
