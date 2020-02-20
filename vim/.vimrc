@@ -39,6 +39,10 @@ filetype plugin indent on    " required
 " Line numbers
 set number
 
+" Tab width
+set tabstop=4
+set shiftwidth=4
+
 " Color scheme
 let base16colorspace=256
 "set t_Co=256
@@ -55,4 +59,4 @@ highlight YcmErrorSection guibg=#A0A000
 
 " Mappings:
 map <C-n> :NERDTreeToggle<CR>
-map <F>:YcmCompleter Format<CR>
+noremap <Leader>f :YcmCompleter Format<CR>
