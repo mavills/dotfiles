@@ -100,6 +100,11 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
+bindsym $win+$alt+Left move workspace to output left
+bindsym $win+$alt+h move workspace to output left
+bindsym $win+$alt+Right move workspace to output right
+bindsym $win+$alt+l move workspace to output right
+
 # split in horizontal orientation
 bindsym $mod+p split h
 
@@ -224,18 +229,17 @@ mode "$mode_system" {
 bindcode $alt+$win+49 mode "$mode_system"
 
 mode "brightness" {
-    bindsym twosuperior exec xrandr --output eDP-1 --brightness 0.0
-    bindsym ampersand exec xrandr --output eDP-1 --brightness 0.1
-    bindsym eacute exec xrandr --output eDP-1 --brightness 0.2
-    bindsym quotedbl exec xrandr --output eDP-1 --brightness 0.3
-    bindsym apostrophe exec xrandr --output eDP-1 --brightness 0.4
-    bindsym parenleft exec xrandr --output eDP-1 --brightness 0.5
-    bindsym section exec xrandr --output eDP-1 --brightness 0.6
-    bindsym egrave exec xrandr --output eDP-1 --brightness 0.7
-    bindsym exclam exec xrandr --output eDP-1 --brightness 0.8
-    bindsym ccedilla exec xrandr --output eDP-1 --brightness 0.9
-    bindsym agrave exec xrandr --output eDP-1 --brightness 1.0
-    
+    bindcode 49 exec xrandr --output eDP-1 --brightness 0.0
+    bindcode 10 exec xrandr --output eDP-1 --brightness 0.1
+    bindcode 11 exec xrandr --output eDP-1 --brightness 0.2
+    bindcode 12 exec xrandr --output eDP-1 --brightness 0.3
+    bindcode 13 exec xrandr --output eDP-1 --brightness 0.4
+    bindcode 14 exec xrandr --output eDP-1 --brightness 0.5
+    bindcode 15 exec xrandr --output eDP-1 --brightness 0.6
+    bindcode 16 exec xrandr --output eDP-1 --brightness 0.7
+    bindcode 17 exec xrandr --output eDP-1 --brightness 0.8
+    bindcode 18 exec xrandr --output eDP-1 --brightness 0.9
+    bindcode 19 exec xrandr --output eDP-1 --brightness 1.0
 
     bindsym Escape mode "default"
     bindsym Return mode "default"
