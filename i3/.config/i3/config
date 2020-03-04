@@ -309,3 +309,4 @@ exec firefox
 
 # Temporary settings for development
 for_window [class="LearnOpenGL"] floating enable
+for_window [class="PointCloudViewer"] floating enable

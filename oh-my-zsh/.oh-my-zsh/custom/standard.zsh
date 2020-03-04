@@ -11,3 +11,5 @@ alias kde='/usr/bin/kdeconnect-cli'
 alias eycm='vim ~/.vim/bundle/youcompleteme/.ycm_extra_conf.py'
 alias ra='. ranger' # Ranger to cd into the directory you quit in.
 alias dot='cd ~/dotfiles'
+alias gitecho='cat ~/.gitaliases'
+alias disp='xrandr --output HDMI-1 --primary --auto --output eDP-1 --left-of HDMI-1 --auto'
