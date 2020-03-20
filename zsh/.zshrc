@@ -137,3 +137,4 @@ export GPULAB_DEV='False'
 export ANDROID_HOME=~/Android/Sdk
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+python ~/Documents/axelle/axelle.py

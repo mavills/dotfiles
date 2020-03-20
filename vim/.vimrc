@@ -1,6 +1,8 @@
 set nocompatible              " required
 filetype off                  " required
 
+set noswapfile
+
 set encoding=utf-8
 
 " =================================

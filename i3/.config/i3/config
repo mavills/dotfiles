@@ -78,10 +78,6 @@ bindsym $alt+Control+$right workspace next
 bindsym $alt+Shift+Control+$left move workspace prev
 bindsym $alt+Shift+Control+$right move workspace next
 
-# Change focus to specific applications:
-bindsym $mod+a [class="Firefox"] focus
-bindsym $win+f exec firefox
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
@@ -172,13 +168,6 @@ bindcode $mod+Shift+16 move container to workspace $workspace7
 bindcode $mod+Shift+17 move container to workspace $workspace8
 bindcode $mod+Shift+18 move container to workspace $workspace9
 bindcode $mod+Shift+19 move container to workspace $workspace10
-
-assign [class="Firefox"] $workspace2
-assign [class="RuneScape"] $workspace10
-assign [class="Runescape"] $workspace10
-#assign [class="spotify"] $workspace10
-for_window [class="Spotify"] move to workspace $workspace10
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
@@ -307,6 +296,23 @@ exec firefox
 # for_window [class=".*"] border pixel 5
 # gaps inner 4
 
-# Temporary settings for development
+### Specific Settings ###
+
 for_window [class="LearnOpenGL"] floating enable
 for_window [class="PointCloudViewer"] floating enable
+for_window [class="gnome-calculator"] floating enable
+for_window [class="Gnome-calculator"] floating enable
+
+assign [class="Firefox"] $workspace2
+assign [class="RuneScape"] $workspace10
+assign [class="Runescape"] $workspace10
+#assign [class="spotify"] $workspace10
+for_window [class="Spotify"] move to workspace $workspace10
+assign [class="jetbrains-clion"] $workspace3
+assign [class="jetbrains-idea"] $workspace3
+
+# Change focus to specific applications:
+bindsym $mod+a [class="Firefox"] focus
+bindsym $win+f exec firefox
+
+bindcode 148 exec gnome-calculator
