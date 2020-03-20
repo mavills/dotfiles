@@ -96,6 +96,7 @@ plugins=(
   git
   fasd
   zsh-autosuggestions
+  zsh-syntax-highlighting
   sudo
 )
 
@@ -126,10 +127,6 @@ fi
 # Example aliases
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
-
-source /home/stijn/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export GPULAB_CERT='/home/stijn/Documents/thesis/gpulab-cli/certificate.pem'
 export GPULAB_DEV='False'
