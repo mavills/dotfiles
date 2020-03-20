@@ -11,8 +11,21 @@ Packages:
 
 ### Install:
 temp: 
-  sudo apt-get install git stow i3 i3blocks vim
+  cd ~
+  sudo apt-get install git stow i3 i3blocks vim xorg libxft-dev zsh fonts-hack-ttf feh compton
+  sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
+  git clone https://github.com/chriskempson/base16-shell.git ~/.config/base16-shell
+  git clone git://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+  
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
+  git clone https://git.suckless.org/st
+  cd st
+  sudo make clean install
+
   log out and log back in
   
   
