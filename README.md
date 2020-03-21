@@ -29,4 +29,4 @@ Packages:
 17. `cd ~/dotfiles`
 18. `stow bash .git .gitignore i3 oh-my-zsh st vim Xresources zsh --adopt`
 19. `git checkout .`
-20. `stow bash .git .gitignore i3 oh-my-zsh st vim Xresources zsh --adopt`
+20. `stow bash .git .gitignore i3 oh-my-zsh st vim Xresources zsh`
