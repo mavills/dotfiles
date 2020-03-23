@@ -24,8 +24,9 @@ Plugin 'gmarik/Vundle.vim'
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
 
-" Plugin for base16 colors
-Plugin 'chriskempson/base16-vim'
+" Plugin for base16 colors and other themes
+"Plugin 'chriskempson/base16-vim'
+Plugin 'dracula/vim', {'name': 'dracula'}
 " Plugin for file explorer in vim
 Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
@@ -49,7 +50,8 @@ set shiftwidth=4
 let base16colorspace=256
 "set t_Co=256
 "set background=light
-colorscheme base16-default-dark
+"colorscheme base16-dracula
+colorscheme dracula
 
 " Setting for global YCM config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'

@@ -34,7 +34,7 @@ set $left h
 set $right l
 
 # Coloring
-set $bg-color 	         #2f644f
+set $bg-color 	         #2f843f
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
