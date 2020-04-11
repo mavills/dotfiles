@@ -284,7 +284,7 @@ bar {
     statusline #F8F8F2
     separator  #44475A
 
-    focused_workspace  #44475A #44475A #F8F8F2
+    focused_workspace  #44475A #7477BA #F8F8F2
     active_workspace   #282A36 #44475A #F8F8F2
     inactive_workspace #282A36 #282A36 #BFBFBF
     urgent_workspace   #FF5555 #FF5555 #F8F8F2
@@ -331,14 +331,16 @@ for_window [class="LearnOpenGL"] floating enable
 for_window [class="PointCloudViewer"] floating enable
 for_window [class="gnome-calculator"] floating enable
 for_window [class="Gnome-calculator"] floating enable
+for_window [class="Microsoft Teams - Preview"] floating enable
 
 # Specific workspaces
 assign [class="Firefox"] $workspace2
 assign [class="RuneScape"] $workspace10
 assign [class="Runescape"] $workspace10
 assign [class="Google-chrome"] $workspace2
-assign [class="jetbrains-idea"] $workspace3
-assign [class="jetbrains-clion"] $workspace3
+assign [class="jetbrains-*"] $workspace3
+# java-lang-Thread is the loading screen for jetbrains
+assign [class="java-lang-Thread"] $workspace3
 for_window [class="Spotify"] move to workspace $workspace10
 
 # Borders
