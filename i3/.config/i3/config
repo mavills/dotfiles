@@ -278,6 +278,7 @@ client.background       #F8F8F2
 
 bar {
   status_command i3blocks -c ~/.config/i3/i3blocks.conf
+  position top
   tray_output primary
   colors {
     background #282A36
@@ -331,7 +332,7 @@ for_window [class="LearnOpenGL"] floating enable
 for_window [class="PointCloudViewer"] floating enable
 for_window [class="gnome-calculator"] floating enable
 for_window [class="Gnome-calculator"] floating enable
-for_window [class="Microsoft Teams - Preview"] floating enable
+#for_window [class="Microsoft Teams - Preview"] floating enable
 for_window [class="Kazam"] floating enable
 
 # Specific workspaces
@@ -354,3 +355,16 @@ bindsym $mod+a [class="Google-chrome"] focus
 bindsym $win+f exec $browser
 
 bindcode 148 exec gnome-calculator
+
+# screen area to clipboard
+bindsym $win+Shift+s exec maim -s | xclip -selection clipboard -t image/png
+bindsym Shift+Print exec maim -s | xclip -selection clipboard -t image/png
+# complete screen to clipboard
+bindsym Print exec maim | xclip -selection clipboard -t image/png
+# Window to clipboard
+bindsym --release $alt+Sys_Req exec --no-startup-id maim -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
+# Pixel value under cursor to clipboard
+bindsym $win+Shift+Print exec "maim -st 9999999 | convert - -resize 1x1\! -format '%[pixel:p{0,0}]' info:- | tr -cd '[:digit:],.' | xclip -selection clipboard
+
+
+bindsym $mod+n exec dmenuunicode 1
