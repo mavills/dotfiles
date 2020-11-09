@@ -45,8 +45,9 @@ set $urgent-bg-color     #E53935
 floating_modifier $mod
 
 # start a terminal
-#bindsym $win+Return exec i3-sensible-terminal
-bindsym $mod+Return exec st
+bindsym $win+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec st
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -199,7 +200,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+
 
 # System mode, for shutting down etc.
 set $Locker ~/.config/scripts/lock.sh && sleep 1
@@ -294,7 +295,9 @@ bar {
 }
 
 
-exec_always --no-startup-id compton --config ~/.config/compton/compton.conf -b
+exec compton --config ~/.config/compton/compton.conf -b
+exec setxkbmap -layout be
+exec xrandr --output DP-1-3 --mode 2560x1440 --left-of eDP-1-1 --primary
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume "@DEFAULT_SINK@" +5% #increase sound volume

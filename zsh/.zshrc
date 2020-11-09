@@ -128,10 +128,12 @@ fi
 # alias zshconfig="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export GPULAB_CERT='/home/stijn/Documents/thesis/gpulab-cli/certificate.pem'
+export GPULAB_CERT='/home/idlab205/Documents/gpulab-credentials/wall_credentials_decrypted.pem'
 export GPULAB_DEV='False'
 
 export ANDROID_HOME=~/Android/Sdk
+export PATH=/usr/local/cuda-11.1/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.1/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 python ~/Documents/axelle/axelle.py

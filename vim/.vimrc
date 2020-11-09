@@ -54,6 +54,7 @@ let base16colorspace=256
 "set background=light
 "colorscheme base16-dracula
 colorscheme dracula
+highlight Normal ctermbg=none
 
 " Setting for global YCM config
 let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'
