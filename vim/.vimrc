@@ -32,10 +32,14 @@ Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 " C/C++
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
+Plugin 'ycm-core/YouCompleteMe'
 
 " Latex
 Plugin 'lervag/vimtex'
+
+" Solidity (Ethereum network)
+Plugin 'tomlion/vim-solidity'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -95,4 +99,7 @@ highlight YcmErrorSection guibg=#A0A000
 
 " Mappings:
 map <C-n> :NERDTreeToggle<CR>
+noremap <Leader>d :YcmCompleter GetDoc<CR>
+noremap <Leader>b :YcmCompleter GoTo<CR>
 noremap <Leader>f :YcmCompleter Format<CR>
+noremap <Leader>x :YcmCompleter FixIt<CR>
